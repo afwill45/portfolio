@@ -1,0 +1,57 @@
+---
+import "@fontsource/fragment-mono";
+import "../styles/global.scss";
+import "../styles/sidebar.scss";
+import { ViewTransitions } from 'astro:transitions';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/banana_favicon.png" />
+    <meta name="description" content="Links to corners of the web" />
+    <title>Links</title>
+    <ViewTransitions />
+  </head>
+  <body>
+    <div class="sidebar-container">
+      <span class="name">
+        <a class="name-link" href="/">Afolabi Williams</a>
+      </span>
+      <div style={{ maxWidth: "350px" }}>
+        I reside in many corners of the web. I collect things on ✶✶ <a
+          class="wavy-link"
+          href=""
+          target="_blank">Are.na</a
+        >. I always have my hands full with (side) projects, which I publish on
+        💻 <a
+          class="wavy-link"
+          href="https://github.com/afwill45"
+          target="_blank">GitHub</a
+        > wherever possible. You can view a nice version of my resume right 📃 <a
+          class="wavy-link"
+          href="https://drive.google.com/file/d/1lqAeN4aDcXoXB4ORnq9IYBAwf6kWccTR/view?usp=sharing"
+          target="_blank">here</a
+        >. For the no-funny-business side of things, see my 💼 <a
+          class="wavy-link"
+          href="https://www.linkedin.com/in/afolabi-williams-06a49620b/"
+          target="_blank">LinkedIn</a
+        >. I have an 📸 <a
+          class="wavy-link"
+          href="https://www.instagram.com/froski10"
+          target="_blank">Instagram</a
+        >, but I'm not active on there. I'm not a big movie person but I've been
+        watching more and more of them, and was persuaded to make
+        a 🍿 <a
+          class="wavy-link"
+          href="https://boxd.it/97Jy9"
+          target="_blank">Letterboxd</a
+        >, so I have that too. 
+      </div>
+      <div style={{ paddingBottom: "55px" }}>
+        <a href="/">← Home</a>
+      </div>
+    </div>
+  </body>
+</html>

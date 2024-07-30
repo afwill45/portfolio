@@ -1,0 +1,55 @@
+---
+import "@fontsource/fragment-mono";
+import "../styles/sidebar.scss";
+import WorkList from "../components/WorkList";
+import ListeningTo from "../components/Listening";
+import Reading from "../components/Reading.astro";
+import Currently from "../components/Currently.astro";
+
+
+---
+
+<div class="sidebar-container">
+  <span class="name">
+    <a class="name-link" href="/">Afolabi Williams</a>
+    <a class="gray-link" href="/about">About</a>
+  </span>
+  <div class="about-container">
+    <span class="about-blurb">
+      Computer Science student at <a href=https://www.bu.edu" target="_blank"
+        >Boston University</a>.
+       Find out
+      <a href="/links"> more →</a>
+      {
+        /* Sometimes I <a
+        href="/notes"
+        class="wavy-link">write</a
+      >. */
+      }
+    </span>
+  </div>
+  <WorkList client:load />
+  <ListeningTo client:load />
+  <Reading />
+  <Currently />
+  <div class="about-blurb">
+    <span>
+      This site is built with
+      <a href="https://astro.build" target="_blank">Astro</a>
+      and typeset in <a
+        href="https://fonts.google.com/specimen/Fragment+Mono"
+        target="_blank">Fragment Mono</a
+      > and
+      <a href="https://fonts.google.com/specimen/Inter" target="_blank">Inter</a
+      >. View the source code
+      <a
+        href="https://github.com/yihui-hu/yihui-hu.github.io"
+        class="wavy-link"
+        target="_blank">here</a
+      >.
+    </span>
+  </div>
+  <span class="last-updated">
+     Designed by yours truly</a>
+  </span>
+</div>

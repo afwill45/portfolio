@@ -1,0 +1,62 @@
+---
+import Sidebar from "../layouts/Sidebar.astro";
+import "../styles/global.scss";
+import "../styles/index.scss";
+import "../styles/about.scss";
+import { ViewTransitions } from 'astro:transitions';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/banana_favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content="Afolabi Williams personal site" />
+    <title>About</title>
+    <ViewTransitions />
+  </head>
+  <body>
+    <div class="index-container">
+      <div id="sidebar">
+        <Sidebar />
+      </div>
+      <div class="about-page-wrapper">
+        <div class="about-page-container">
+          <span>Me</span>
+          <div>
+            <img class="about-image" src="https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/IMG_3019.jpg" />
+            <span class="about-image-caption">c. Mar 2024 </span>
+          </div>
+          <div class="about" style={{ marginBottom: "55px" }}>
+            <span>Hello! I'm Afolabi.</span>
+            <span>
+              I'm from Nigeria, currently studying CS at Boston University in Massachusetts. I'm
+              interested in creating shared experiences on the web and building code
+              with polish and performance in mind. In my free time, I continue
+              to explore, develop and design my future.
+            </span>
+            <span>
+              You can view my CV <a
+                href="https://drive.google.com/file/d/1lqAeN4aDcXoXB4ORnq9IYBAwf6kWccTR/view?usp=sharing"
+                class="wavy-link">here</a
+              >.
+            </span>
+          </div>
+        </div>
+        <div class="back-button">
+          <span class="back-button">
+            <a class="gray-link" href="/">Home</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  const mobile = window.innerWidth <= 864 ? true : false;
+  document.getElementById("article-body")!.style.backgroundColor = mobile
+    ? "black"
+    : "";
+</script>
