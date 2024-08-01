@@ -9,9 +9,9 @@ const ListeningTo = () => {
       
       if (isCached && cachedTime) {
         const currentTime = new Date().getTime();
-        const fiveMinutes = 5 * 60 * 1000;
+        const oneMinute = 1 * 60 * 1000;
 
-        if (currentTime - parseInt(cachedTime) > fiveMinutes) {
+        if (currentTime - parseInt(cachedTime) > oneMinute) {
           console.log("Refresh cache");
         } else {
           const image = localStorage.getItem("listeningToImage")!;

@@ -11,6 +11,11 @@ const workImages: WorkImageData[] = [
     category: "code test"
   },
   {
+    url: "https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/Screenshot+2024-07-31+at+7.58.10%E2%80%AFPM.webp",
+    id: "ai",
+    category: "code test"
+  },
+  {
     url: "https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/banana_favicon.png",
     id: "portfolio",
     category: "code personal test"
