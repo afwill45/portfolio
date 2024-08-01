@@ -16,11 +16,6 @@ const workImages: WorkImageData[] = [
     category: "code test"
   },
   {
-    url: "https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/banana_favicon.png",
-    id: "portfolio",
-    category: "code personal test"
-  },
-  {
     url: "https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/Screenshot+2024-07-30+at+4.01.10%E2%80%AFAM.png",
     id: "tetris",
     category: "code test"
@@ -56,11 +51,11 @@ const workImages: WorkImageData[] = [
     id: "genius",
     category: "code personal test"
   },
-  {
-    url: "https://yihui-work.s3.us-east-2.amazonaws.com/misc_water.webp",
-    id: "misc.",
-    category: "design art",
-  },
+  // {
+   // url: "https://yihui-work.s3.us-east-2.amazonaws.com/misc_water.webp",
+    //id: "misc.",
+    //category: "design art",
+  //},
   
 ];
 

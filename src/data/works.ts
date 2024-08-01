@@ -51,16 +51,6 @@ export const works: WorkListItem[] = [
     wip: true,
   },
   {
-    title: "portfolio",
-    description: "This portfolio website",
-    blurb: "Portfolio website",
-    year: "2024",
-    category: "code personal test",
-    url: "",
-    new: false,
-    wip: true,
-  },
-  {
     title: "3ds",
     description: "Hacking my sister's 3ds",
     blurb: "3ds hacking experience",

@@ -6,11 +6,18 @@ import ListeningTo from "../components/Listening";
 import Reading from "../components/Reading.astro";
 import Currently from "../components/Currently.astro";
 
+import * as dotenv from 'dotenv';
+dotenv.config();
+
+
+async function getCommits() {
+  const token = import.meta.env.GITHUB_TOKEN;
+}
 
 const response = await fetch(
   `https://api.github.com/repos/afwill45/portfolio/commits`,{
   headers: {
-            'Authorization': 'token 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',
+            'Authorization': '${token}',
         }}
 );
 
@@ -72,7 +79,7 @@ const dateFormat =
     </span>
   </div>
   <span class="last-updated">
-    Designed by yours truly
+    Designed by yours truly <br>
     <a href={url} id="last-updated"> Last updated: {dateFormat}</a>
   </span>
 </div>
