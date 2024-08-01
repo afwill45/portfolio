@@ -85,13 +85,6 @@ const WorkList = () => {
           personal
         </span>
 
-        <span
-          id="test"
-          className="tag deselected"
-          onClick={() => updateTags("test")}
-        >
-          test
-        </span>
       </div>
       <hr className="works-hr"></hr>
       <div className="works-list">

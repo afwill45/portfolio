@@ -6,9 +6,6 @@ import ListeningTo from "../components/Listening";
 import Reading from "../components/Reading.astro";
 import Currently from "../components/Currently.astro";
 
-import * as dotenv from 'dotenv';
-dotenv.config();
-
 
 async function getCommits() {
   const token = import.meta.env.GITHUB_TOKEN;
