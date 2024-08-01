@@ -88,7 +88,7 @@ export const works: WorkListItem[] = [
     category: "code personal test",
     url: "",
     new: false,
-    wip: false,
+    wip: true,
   },
   {
     title: "duolingo",
