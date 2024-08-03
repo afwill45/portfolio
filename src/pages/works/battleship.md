@@ -149,6 +149,8 @@ Notice that every now and then the surroundings largely darken, that's when it's
 
 ![image](https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/unnamed-3.webp)
 
+You can find an old iteration of our solution [here](https://github.com/afwill45/CS440-Battleship.git)
+
 ---
 
 [^1]: This isn't the actual code used. All the code on this page are essentially pseudocode of an implementation.
@@ -157,5 +159,5 @@ Notice that every now and then the surroundings largely darken, that's when it's
 
 [^3]: I discovered that these results are innacurate. It actually performs much better, with an average between 30 and 40 moves depending on implementation and a maximum game length of abput 66 moves.
 
-[^4]: These method is highly dependent of how you calculate probabilities. Our solution optimal because we implement parity, direction optimization, and hunt and target into our calculations.
+[^4]: These method is highly dependent of how you calculate probabilities. Our solution is optimal because we implement parity, direction optimization, and hunt and target into our calculations.
 It can be further improved by using game theory or machine learning for non-random ship positions, but the figures on this post are all based on random positions.
