@@ -16,7 +16,7 @@ export const works: WorkListItem[] = [
     blurb: "Battleship AI gameplay",
     year: "2024",
     category: "code ",
-    url: "works/battleship",
+    url: "/works/battleship",
     new: false,
     wip: false,
   },
