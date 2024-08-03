@@ -6,7 +6,7 @@ interface WorkImageData {
 
 const workImages: WorkImageData[] = [
   {
-    url: "https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/Screenshot+2024-07-29+at+9.41.12%E2%80%AFPM.png",
+    url: "https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/Untitled-ezgif.com-optimize.gif",
     id: "battleship",
     category: "code test"
   },
@@ -16,7 +16,7 @@ const workImages: WorkImageData[] = [
     category: "code test"
   },
   {
-    url: "https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/Screenshot+2024-07-30+at+4.01.10%E2%80%AFAM.png",
+    url: "https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/ezgif-1-82a509d6d4-2.gif",
     id: "tetris",
     category: "code test"
   },
@@ -32,7 +32,7 @@ const workImages: WorkImageData[] = [
     category: "code design test"
   },
   {
-    url: "https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/IMG_3923.JPG",
+    url: "https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/IMG_3919.webp",
     id: "concert",
     category: "personal test"
   },
@@ -42,12 +42,12 @@ const workImages: WorkImageData[] = [
     category: "design",
   },
   {
-    url: "https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/Screenshot_2024-07-29_at_4.17.48_PM-removebg.png",
+    url: "https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/Screenshot_2024-07-29_at_4.17.48_PM-removebg.webp",
     id: "duolingo",
     category: "design personal test"
   },
   {
-    url: "https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/IMG_5965.PNG",
+    url: "https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/IMG_5965.webp",
     id: "genius",
     category: "code personal test"
   },
