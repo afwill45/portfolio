@@ -18,7 +18,7 @@ export const works: WorkListItem[] = [
     category: "code ",
     url: "works/battleship",
     new: false,
-    wip: true,
+    wip: false,
   },
   {
     title: "ai",
