@@ -21,7 +21,7 @@ Battleship began as a midterm project for an introduction to AI college class. I
 
 ## Initial Approach
 
-The first approach we considered was a random search[^1]. Guessing squares at random. We were supplied a default opponent to test our code against, and that was its strategy so we fought fire with fire.
+The first approach we considered was a random search[^1]; guessing squares at random. We were supplied a default opponent to test our code against, and that was its strategy so we fought fire with fire.
 - Average game length: 95.39 turns
 - Minimum game length: 41 turns
 - Maximum game length: 100 turns
@@ -139,7 +139,7 @@ This dramatically improves our average results to get[^3]:
     
     return target
 ```
-The four corners of the board start off with the lowest probabilities and so we artifically inflated them to catch any ships taking advantage of that fact. Here's a look at one of our iterations in actions, winning in only 42 moves. 
+The four corners of the board start off with the lowest probabilities and so we artificially inflated them to catch any ships taking advantage of that fact. Here's a look at one of our iterations in actions, winning in only 42 moves. 
 
 Notice that every now and then the surroundings largely darken, that's when it's hit a ship and enters the targetting stage.
 
@@ -157,7 +157,7 @@ You can find an old iteration of our solution [here](https://github.com/afwill45
 
 [^2]: If you know the number of ships, you can keep track of ships sunk and adjust the "smallest_ship_size" number dynamically. You can also implement this backwards. E.g. Check every 5 spaces, and once all ships of size 5 sink, check every 4 spaces, and so and so forth.
 
-[^3]: I discovered that these results are innacurate. It actually performs much better, with an average between 30 and 40 moves depending on implementation and a maximum game length of abput 66 moves.
+[^3]: I discovered that these results are innacurate. It actually performs much better, with an average between 30 and 40 moves depending on implementation and a maximum game length of about 66 moves.
 
-[^4]: These method is highly dependent of how you calculate probabilities. Our solution is optimal because we implement parity, direction optimization, and hunt and target into our calculations.
+[^4]: This method is highly dependent on how you calculate probabilities. Our solution is optimal because we implement parity, direction optimization, and hunt and target into our calculations.
 It can be further improved by using game theory or machine learning for non-random ship positions, but the figures on this post are all based on random positions.
