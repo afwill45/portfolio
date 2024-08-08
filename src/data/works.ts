@@ -66,9 +66,9 @@ export const works: WorkListItem[] = [
     blurb: "Concerts in Boston",
     year: "2022-",
     category: "personal ",
-    url: "",
+    url: "/works/concerts",
     new: false,
-    wip: true,
+    wip: false,
   },
   {
     title: "genius",
