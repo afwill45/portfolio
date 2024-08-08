@@ -17,7 +17,7 @@ Battleship began as a midterm project for an introduction to AI college class. I
 > Battleship is a two player game where each player is in control of a fleet of ships. Each player is in control over a discrete board (i.e. a board with discrete coordinates), and both boards are the same size. Players place their ships one at a time on their board in secret: ships are allowed to touch but cannot overlap (i.e. they can be next to each other but not intersect). Once a player has finished placing their ships on their board, the ships cannot move afterwards. Finally, players take turns guessing coordinates on their opponents board. If the guessed square is occupied by a ship, that ship is “hit”. If all of the squares that a ship occupies are hit, that ship is sunk. The player who sinks their opponents entire fleet wins. <br> - Andrew Wood (Undisputed best CS Prof.)
 
 
-![image](https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/Untitled-ezgif.com-optimize.gif)
+![A gif of one of our battleship iterations in action, it sinks two of the opposing ships while its opponent sinks none](https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/Untitled-ezgif.com-optimize.gif "Battleship gif")
 
 ## Initial Approach
 
@@ -25,7 +25,7 @@ The first approach we considered was a random search[^1]; guessing squares at ra
 - Average game length: 95.39 turns
 - Minimum game length: 41 turns
 - Maximum game length: 100 turns
-![image](https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/unnamed.webp)
+![Random search graph](https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/unnamed.webp "Random search graph")
 
 ```py
     def random_shot(self):
@@ -47,7 +47,7 @@ Using the structure from the random search, this algorithm randomly guesses unti
 - Maximum game length: 100 turns
 
 
-![image](https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/Screenshot+2024-08-03+at+12.11.44%E2%80%AFAM.webp)
+![Hunt and target graph](https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/Screenshot+2024-08-03+at+12.11.44%E2%80%AFAM.webp "Hunt and target graph")
 
 ```py
     for row in range(len(board)):
@@ -79,7 +79,7 @@ If the smallest ship takes up TWO squares, then in a board of a 100 squares you 
 - Maximum game length: 75 turns
 
 
-![image](https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/unnamed-4.webp)
+![Parity graph](https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/unnamed-4.webp "Parity graph")
 
 ```py
     smallest_ship_size = 2
@@ -115,18 +115,18 @@ Instead of guessing randomly, this method calculates the likelihood of each cell
 
 We ask every single cell; how likely is it that you have a ship? And we pick the cell that replies the highest number.
 
-![image](https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/Screenshot+2024-08-03+at+3.33.23%E2%80%AFAM.webp)
+![Mathematical representation of our probability search solution](https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/Screenshot+2024-08-03+at+3.33.23%E2%80%AFAM.webp "Probabiltiy search math representation")
 
 We can represent this information as a heatmap. The lighter the square, the more likely it is that there is a ship. After every move, we update our calculations.
 
-![image](https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/image.jpg)
+![Heat Map of 10x10 battleship grid](https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/image.jpg "Heatmap grid")
 
 This dramatically improves our average results to get[^3]:
 - Average game length: 46.11 turns
 - Minimum game length: 19 turns
 - Maximum game length: 74 turns
 
-![image](https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/unnamed-7.webp)
+![Probability search graph](https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/unnamed-7.webp "Probability search graph")
 
 ```py
     max_prob = -1
@@ -139,15 +139,15 @@ This dramatically improves our average results to get[^3]:
     
     return target
 ```
-The four corners of the board start off with the lowest probabilities and so we artificially inflated them to catch any ships taking advantage of that fact. Here's a look at one of our iterations in actions, winning in only 42 moves. 
+The four corners of the board start off with the lowest probabilities and so we artificially inflated them to catch any ships taking advantage of that fact. Here's a look at one of our iterations in action, winning in only 42 moves. 
 
 Notice that every now and then the surroundings largely darken, that's when it's hit a ship and enters the targetting stage.
 
-![image](https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/heatmap_animation.gif)
+![Heatmap representation gif of a battleship game](https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/heatmap_animation.gif "Heatmap game")
 
 ## Final Results
 
-![image](https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/unnamed-3.webp)
+![Graph of every solution, probability search is the best while random search is the worst](https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/unnamed-3.webp "Cumulative graph")
 
 You can find an old iteration of our solution [here](https://github.com/afwill45/CS440-Battleship.git)
 
