@@ -31,7 +31,7 @@ tags: ["personal"]
 ![image](https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/IMG_4576.webp)
 ![image](https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/IMG_4549.webp)
 
-## [Gorillaz](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.gorillaz.com/&ved=2ahUKEwilruicvuaHAxUsElkFHYgWKlYQFnoECEMQAQ&usg=AOvVaw3DKt0acUkgXPTxgCxsvUmL)
+## [Gorillaz](https://www.gorillaz.com)
 ![image](https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/IMG_3898.webp)
 ![image](https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/IMG_3851.webp)
 

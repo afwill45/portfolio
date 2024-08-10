@@ -12,7 +12,7 @@ tags: ["code"]
 `Aug 2024`
 `code`
 
-Battleship began as a midterm project for an introduction to AI college class. I and my friend, Chiron Phanbuh got to work with only one goal in mind. Make a program that can play Battleship.
+This program began as a midterm project for an introduction to AI college class. I and my friend, Chiron Phanbuh got to work with only one goal in mind. Make a program that can play Battleship.
 
 > Battleship is a two player game where each player is in control of a fleet of ships. Each player is in control over a discrete board (i.e. a board with discrete coordinates), and both boards are the same size. Players place their ships one at a time on their board in secret: ships are allowed to touch but cannot overlap (i.e. they can be next to each other but not intersect). Once a player has finished placing their ships on their board, the ships cannot move afterwards. Finally, players take turns guessing coordinates on their opponents board. If the guessed square is occupied by a ship, that ship is “hit”. If all of the squares that a ship occupies are hit, that ship is sunk. The player who sinks their opponents entire fleet wins. <br> - Andrew Wood (Undisputed best CS Prof.)
 

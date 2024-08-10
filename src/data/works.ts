@@ -76,7 +76,7 @@ export const works: WorkListItem[] = [
     blurb: "Genius music shortcut",
     year: "2021",
     category: "code personal",
-    url: "",
+    url: "/works/genius",
     new: false,
     wip: true,
   },
