@@ -57,7 +57,7 @@ export const works: WorkListItem[] = [
     year: "2024",
     category: "code personal ",
     url: "",
-    new: true,
+    new: false,
     wip: true,
   },
   {
@@ -78,7 +78,7 @@ export const works: WorkListItem[] = [
     category: "code personal",
     url: "/works/genius",
     new: false,
-    wip: true,
+    wip: false,
   },
   {
     title: "duolingo",
