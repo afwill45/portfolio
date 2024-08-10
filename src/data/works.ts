@@ -95,7 +95,7 @@ export const works: WorkListItem[] = [
     description: "collection of my in-game characters",
     blurb: "in-game personas",
     year: "2024",
-    category: "design art",
+    category: "design personal",
     url: "/personas",
     new: false,
     wip: false,

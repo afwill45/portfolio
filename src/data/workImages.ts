@@ -29,7 +29,7 @@ const workImages: WorkImageData[] = [
   {
     url: "https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/Flame_Red.png.webp",
     id: "3ds",
-    category: "code design"
+    category: "code personal"
   },
   {
     url: "https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/IMG_3919.webp",
@@ -39,12 +39,12 @@ const workImages: WorkImageData[] = [
   {
     url: "https://yihui-work.s3.us-east-2.amazonaws.com/personas_work_image.png",
     id: "personas",
-    category: "design",
+    category: "design personal",
   },
   {
     url: "https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/Screenshot_2024-07-29_at_4.17.48_PM-removebg.webp",
     id: "duolingo",
-    category: "design personal"
+    category: "design"
   },
   {
     url: "https://afolabitestbucket.s3.us-east-2.amazonaws.com/Image_test_folder/IMG_5965.webp",
