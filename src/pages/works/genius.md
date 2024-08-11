@@ -23,7 +23,12 @@ Shortcuts are reminscent of workflow automation software like Notion or Jira, or
 
 I listen to a lot of music, and I love checking lyrics and their meanings on <genius.com>. 
 
-But, while listening to a song, if I heard a lyric I wanted to look into, I would have to navigate to the genius webite → search up and select the song I'm listening to → scroll down to the lyric I want. Not only was this a bit tedious tens of times a day, in the time it took to do this, the song had probably moved on quite far.
+But, while listening to a song, if I heard a lyric I wanted to look into, I would have to 
+- Navigate to the genius webite → 
+- search up and select the song I'm listening to → 
+- scroll down to the lyric I want.
+    
+Not only was this a bit tedious tens of times a day, in the time it took to do this, the song had probably moved on quite far.
 
 So, I set out to build a shortcut that would make this process faster and easier. 
 
