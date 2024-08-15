@@ -35,8 +35,8 @@ All assets, compressed and converted to `.webp` format wherever possible, are ho
 
 ```bash
 # clone project
-git clone https://github.com/yihui-hu/yihui-work.git
-cd yihui-work
+git clone https://github.com/afwill45/portfolio.git
+cd portfolio
 
 # install dependencies
 npm install
