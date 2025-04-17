@@ -10,6 +10,18 @@ interface WorkListItem {
 }
 
 export const works: WorkListItem[] = [
+
+  {
+    title: "Atrium",
+    description: "Custom Event Management Platform",
+    blurb: "Event management Figma",
+    year: "2025",
+    category: "code design",
+    url: "/works/atrium",
+    new: true,
+    wip: true,
+  },
+
   {
     title: "battleship",
     description: "Battleship AI program",
