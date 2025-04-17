@@ -108,7 +108,7 @@ export const works: WorkListItem[] = [
     blurb: "in-game personas",
     year: "2024",
     category: "design personal",
-    url: "/personas.astro",
+    url: "/personas",
     new: false,
     wip: false,
   },
