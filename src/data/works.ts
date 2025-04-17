@@ -6,6 +6,7 @@ interface WorkListItem {
   category: string;
   url: string;
   new: boolean;
+  external?: boolean;
   wip: boolean;
 }
 
@@ -18,6 +19,7 @@ export const works: WorkListItem[] = [
     year: "2025",
     category: "code design",
     url: "/works/atrium",
+    external: true,
     new: true,
     wip: true,
   },
@@ -99,6 +101,7 @@ export const works: WorkListItem[] = [
     year: "2023",
     category: "design",
     url: "https://www.figma.com/proto/9CS259QWD3IQ12MSGcsOZI/INTERN_THRIVE-Duolingo-Product-Design-Challenge-2023-%5BWORKING-FILE%5D?node-id=6-103&starting-point-node-id=6%3A103",
+    external: true,
     new: false,
     wip: false,
   },
